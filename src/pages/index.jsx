@@ -13,6 +13,11 @@ const IndexPage = () => {
       <header>Creator & Educator</header>
 
       <InfoCard />
+      {/* 
+      <InfoCard />
+
+      <InfoCard /> */}
+
       {/* This Is How You Link */}
       {/* <Link to="/portfolio/">Portfolio</Link>
       <Link to="/about/">About</Link>
