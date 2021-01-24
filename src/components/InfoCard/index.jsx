@@ -11,7 +11,7 @@ export default function InfoCard(props) {
           <div className="stats-container__subscribers__title">
             Subscribers:
           </div>
-          <div className="stats-container__subscribers__number">40,000</div>
+          <div className="stats-container__subscribers__number">d</div>
         </div>
 
         <div className="stats-container__videos">

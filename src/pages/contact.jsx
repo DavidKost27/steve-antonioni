@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./styles/index.scss";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 import TopBar from "../components/TopBar";
 
