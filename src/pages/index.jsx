@@ -8,9 +8,10 @@ import TopBar from "../components/TopBar";
 import InfoCard from "../components/InfoCard";
 
 const IndexPage = () => {
+  const [channelAvatar, setChannelAvatar] = useState("null");
   const [stats, setStats] = useState({
-    Subscribers: 0,
-    Videos: 0,
+    subscribers: 0,
+    videos: 0,
   });
   const apiRequestHandler = () => {
     axios
@@ -22,9 +23,13 @@ const IndexPage = () => {
           const channelStats = response.data.items[0].statistics;
           const { subscriberCount, videoCount } = channelStats;
           setStats({
-            Subscribers: subscriberCount,
-            Uploaded_Videos: videoCount,
+            subscribers: subscriberCount,
+            videos: videoCount,
           });
+          setChannelAvatar(
+            response.data.items[0].snippet.thumbnails.default.url
+          );
+          console.log("David Is dog backwards");
         }
       })
       .catch((error) => {
@@ -33,17 +38,17 @@ const IndexPage = () => {
   };
   useEffect(() => {
     apiRequestHandler();
-    return () => {
-      console.log("Hello");
-    };
   }, []);
+  //
+
+  //
   return (
     <main className="home">
       <title>Home Page</title>
       <TopBar />
       <header>Creator & Educator</header>
 
-      <InfoCard stats={stats} />
+      <InfoCard stats={stats} channelAvatar={channelAvatar} />
       {/* 
       <InfoCard />
 
