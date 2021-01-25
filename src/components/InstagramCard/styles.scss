@@ -9,15 +9,40 @@
   -webkit-box-shadow: 0px 6px 17px -1px rgba(0, 0, 0, 0.19);
   box-shadow: 0px 6px 17px -1px rgba(0, 0, 0, 0.19);
   font-family: "Rancho", cursive;
-  img {
+  position: relative;
+  &__avatar {
     width: 100px;
     height: 100px;
     border-radius: 60px;
     margin: 10px 0;
   }
+  &__icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 95px;
+  }
   &__header {
     font-size: 30px;
     text-decoration: none;
     color: black;
+  }
+
+  // Stats
+  .stats-container {
+    text-align: center;
+    font-size: 22px;
+    &__followers {
+      &__title {
+      }
+      &__number {
+      }
+    }
+    &__posts {
+      &__title {
+      }
+      &__number {
+      }
+    }
   }
 }

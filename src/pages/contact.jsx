@@ -3,6 +3,7 @@ import "./styles/index.scss";
 // import { Link } from "gatsby";
 
 import TopBar from "../components/TopBar";
+import NavBar from "../components/NavBar";
 
 const IndexPage = () => {
   return (
@@ -16,6 +17,8 @@ const IndexPage = () => {
       <Link to="/portfolio/">Portfolio</Link>
       <Link to="/contact/">Contact</Link> */}
       {/*  */}
+
+      <NavBar />
     </main>
   );
 };

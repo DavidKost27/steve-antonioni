@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import YouTubeLogo from "../../assets/icons/youtube-icon.png";
+import YouTubeLogo from "../../assets/icons/youtube-icon.svg";
 
 export default function InfoCard(props) {
   const subscribersNumber = parseInt(props.stats.subscribers).toLocaleString();

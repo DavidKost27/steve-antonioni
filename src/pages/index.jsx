@@ -7,6 +7,7 @@ import axios from "axios";
 import TopBar from "../components/TopBar";
 import InfoCard from "../components/InfoCard";
 import InstagramCard from "../components/InstagramCard";
+import NavBar from "../components/NavBar";
 
 const IndexPage = () => {
   const [channelAvatar, setChannelAvatar] = useState("null");
@@ -30,7 +31,6 @@ const IndexPage = () => {
           setChannelAvatar(
             response.data.items[0].snippet.thumbnails.default.url
           );
-          console.log("David Is dog backwards");
         }
       })
       .catch((error) => {
@@ -61,6 +61,8 @@ const IndexPage = () => {
       <Link to="/about/">About</Link>
       <Link to="/contact/">Contact</Link> */}
       {/*  */}
+
+      <NavBar />
     </main>
   );
 };
