@@ -17,6 +17,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-google-fonts-v2": "0.0.6",
     "gatsby-plugin-sass": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
