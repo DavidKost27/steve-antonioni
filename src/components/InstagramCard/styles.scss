@@ -1,4 +1,4 @@
-.infoCard {
+.instagramCard {
   width: 200px;
   height: 290px;
   display: flex;
@@ -16,24 +16,8 @@
     margin: 10px 0;
   }
   &__header {
-    font-size: 35px;
-  }
-
-  // Stats
-  .stats-container {
-    text-align: center;
-    font-size: 22px;
-    &__subscribers {
-      &__title {
-      }
-      &__number {
-      }
-    }
-    &__videos {
-      &__title {
-      }
-      &__number {
-      }
-    }
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
   }
 }

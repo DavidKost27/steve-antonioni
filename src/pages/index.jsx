@@ -6,6 +6,7 @@ import axios from "axios";
 
 import TopBar from "../components/TopBar";
 import InfoCard from "../components/InfoCard";
+import InstagramCard from "../components/InstagramCard";
 
 const IndexPage = () => {
   const [channelAvatar, setChannelAvatar] = useState("null");
@@ -49,6 +50,7 @@ const IndexPage = () => {
       <header>Creator & Educator</header>
 
       <InfoCard stats={stats} channelAvatar={channelAvatar} />
+      <InstagramCard />
       {/* 
       <InfoCard />
 
