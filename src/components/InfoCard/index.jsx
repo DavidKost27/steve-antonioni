@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import YouTubeLogo from "../../assets/icons/youtube-icon.png";
 
 export default function InfoCard(props) {
   const subscribersNumber = parseInt(props.stats.subscribers).toLocaleString();
@@ -7,7 +8,12 @@ export default function InfoCard(props) {
 
   return (
     <div className="infoCard">
-      <img src={`${props.channelAvatar}`} alt="YouTube Profile Picture" />
+      <img
+        className="infoCard__avatar"
+        src={`${props.channelAvatar}`}
+        alt="YouTube Profile Picture"
+      />
+      <img className="infoCard__icon" src={YouTubeLogo} alt="d" />
       <div className="infoCard__header">Cash College</div>
       <div className="stats-container">
         <div className="stats-container__subscribers">
