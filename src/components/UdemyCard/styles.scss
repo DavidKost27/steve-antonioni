@@ -1,0 +1,47 @@
+.udemyCard {
+  width: 200px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.651);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 17px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 6px 17px -1px rgba(0, 0, 0, 0.19);
+  font-family: "Rancho", cursive;
+  position: relative;
+  &__avatar {
+    width: 150px;
+    height: 200px;
+    border-radius: 0px;
+    margin: 10px 0;
+  }
+  &__icon {
+    width: 30px;
+    height: 29px;
+    position: absolute;
+    top: 95px;
+  }
+
+  &__header {
+    font-size: 25px;
+  }
+
+  // Stats
+  .stats-container {
+    text-align: center;
+    font-size: 22px;
+    &__subscribers {
+      &__title {
+      }
+      &__number {
+      }
+    }
+    &__videos {
+      &__title {
+      }
+      &__number {
+      }
+    }
+  }
+}

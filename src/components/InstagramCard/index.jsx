@@ -11,7 +11,11 @@ export default function InstagramCard() {
         alt="Instagram Profile Avatar"
       />
 
-      <img className="instagramCard__icon" src={InstagramIcon} alt="d" />
+      <img
+        className="instagramCard__icon"
+        src={InstagramIcon}
+        alt="instagram logo"
+      />
 
       <a
         className="instagramCard__header"

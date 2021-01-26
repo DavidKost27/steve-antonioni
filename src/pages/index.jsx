@@ -5,8 +5,9 @@ import "./styles/index.scss";
 import axios from "axios";
 
 import TopBar from "../components/TopBar";
-import InfoCard from "../components/InfoCard";
+import YoutubeCard from "../components/YoutubeCard";
 import InstagramCard from "../components/InstagramCard";
+import UdemyCard from "../components/UdemyCard";
 import NavBar from "../components/NavBar";
 
 const IndexPage = () => {
@@ -45,16 +46,15 @@ const IndexPage = () => {
   //
   return (
     <main className="home">
-      <title>Home Page</title>
+      <title>Steve Antonioni - Home</title>
       <TopBar />
       <header>Creator & Educator</header>
 
-      <InfoCard stats={stats} channelAvatar={channelAvatar} />
-      <InstagramCard />
-      {/* 
-      <InfoCard />
+      <YoutubeCard stats={stats} channelAvatar={channelAvatar} />
 
-      <InfoCard /> */}
+      <InstagramCard />
+
+      <UdemyCard />
 
       {/* This Is How You Link */}
       {/* <Link to="/portfolio/">Portfolio</Link>
