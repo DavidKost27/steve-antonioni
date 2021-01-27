@@ -12,7 +12,7 @@ export default function UdemyCard() {
       />
       <img className="udemyCard__icon" src={Udemy} alt="udemy logo" />
       <div className="udemyCard__header">
-        "Become Financially Independent and Retire Early"
+        Become Financially <br /> Independent and <br /> Retire Early
       </div>
     </div>
   );

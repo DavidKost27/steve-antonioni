@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./styles/index.scss";
+import "./styles/contact.scss";
 // import { Link } from "gatsby";
 
 import TopBar from "../components/TopBar";

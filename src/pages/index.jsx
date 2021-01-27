@@ -16,7 +16,7 @@ const IndexPage = () => {
     subscribers: 0,
     videos: 0,
   });
-  const apiRequestHandler = () => {
+  const youtubeApiRequest = () => {
     axios
       .get(
         `https://youtube.googleapis.com/youtube/v3/channels?part=snippet&part=statistics&id=UCS4ITAOQlFP9_ny2Zl5b0ig&key=${process.env.GATSBY_YOUTUBE_API_KEY}`
@@ -38,11 +38,40 @@ const IndexPage = () => {
         console.log("API-request: Something Went Wrong");
       });
   };
-  useEffect(() => {
-    apiRequestHandler();
-  }, []);
+
   //
 
+  // Instagram API call
+  const [profilePic, setProfilePic] = useState("null");
+  const [instaStats, setInstaStats] = useState({
+    followers: 0,
+    posts: 0,
+  });
+
+  const instagramApiRequest = () => {
+    axios
+      .get(`https://www.instagram.com/steveantonioni/channel/?__a=1`)
+      .then((response) => {
+        const followers = response.data.graphql.user.edge_followed_by.count;
+        const posts =
+          response.data.graphql.user.edge_owner_to_timeline_media.count;
+
+        setProfilePic(response.data.graphql.user.profile_pic_url);
+        setInstaStats({
+          followers: followers,
+          posts: posts,
+        });
+      })
+      .catch((error) => {
+        console.log("API-request: Something Went Wrong");
+      });
+  };
+
+  // Call API on page load
+  useEffect(() => {
+    youtubeApiRequest();
+    instagramApiRequest();
+  }, []);
   //
   return (
     <main className="home">
@@ -52,7 +81,7 @@ const IndexPage = () => {
 
       <YoutubeCard stats={stats} channelAvatar={channelAvatar} />
 
-      <InstagramCard />
+      <InstagramCard profilePic={profilePic} instaStats={instaStats} />
 
       <UdemyCard />
 

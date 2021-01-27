@@ -1,0 +1,26 @@
+.about {
+  box-sizing: border-box;
+  font-family: "Rancho", cursive;
+  .about-paragraph {
+    padding-left: 40px;
+    width: 300px;
+    text-align: left;
+    &__header {
+      font-size: 35px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    &__location {
+      font-size: 28px;
+      padding-bottom: 5px;
+    }
+    &__info {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    &__img-about {
+      width: 250px;
+      height: 300px;
+    }
+  }
+}
