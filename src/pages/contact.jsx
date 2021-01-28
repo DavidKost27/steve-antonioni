@@ -10,7 +10,21 @@ const IndexPage = () => {
     <main className="contact">
       <title>Steve Antonioni - Contact</title>
       <TopBar />
-      <div>Contact</div>
+      <div>
+        <div>Get in Touch</div>
+
+        <div>
+          Interested in working together or have a question? Feel free to drop
+          me a line and I will get back shortly.
+        </div>
+
+        <div>
+          Shoot me an email or send me a direction message through the field
+          below.{" "}
+        </div>
+      </div>
+
+      <div>Email: steveantonioni@gmail.com</div>
 
       {/* This Is How You Link */}
       {/* <Link to="/">Home</Link>
