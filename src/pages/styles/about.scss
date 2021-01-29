@@ -1,8 +1,10 @@
 .about {
   box-sizing: border-box;
   font-family: "Rancho", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .about-paragraph {
-    padding-left: 40px;
     width: 300px;
     text-align: left;
     text-align: center;
