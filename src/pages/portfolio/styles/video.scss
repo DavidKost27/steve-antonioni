@@ -1,0 +1,14 @@
+.video {
+  .videos-container {
+    margin-top: 100px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  iframe {
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+  }
+}
