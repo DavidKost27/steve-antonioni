@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/video.scss";
 
 import TopBar from "../../components/TopBar";
 import PortfolioNav from "../../components/PortfolioNav";
@@ -6,19 +7,29 @@ import NavBar from "../../components/NavBar";
 
 export default function Video() {
   return (
-    <div>
+    <div className="video">
       <title>Steve Antonioni - Portfolio</title>
       <TopBar />
-      <div>Video</div>
-
-      <iframe
-        src="https://player.vimeo.com/video/320336628?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;api=1&amp;autoplay=1"
-        allowfullscreen=""
-        width="100%"
-        height="100%"
-        frameborder="0"
-      ></iframe>
-
+      <div className="videos-container">
+        <iframe
+          src="https://player.vimeo.com/video/320336628?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
+          frameborder="0"
+          allowfullscreen=""
+          scrolling="no"
+        ></iframe>
+        <iframe
+          src="https://player.vimeo.com/video/320354796?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
+          frameborder="0"
+          allowfullscreen=""
+          scrolling="no"
+        ></iframe>
+        <iframe
+          src="https://player.vimeo.com/video/320950267?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
+          frameborder="0"
+          allowfullscreen=""
+          scrolling="no"
+        ></iframe>
+      </div>
       <PortfolioNav />
       <NavBar />
     </div>
