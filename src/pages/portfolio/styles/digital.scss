@@ -1,0 +1,26 @@
+.portfolio-digital {
+  .img-container-parent {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    .img-container {
+      margin: 50px 0;
+      margin-right: 10px;
+      width: 300px;
+      overflow-x: scroll;
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      box-sizing: border-box;
+
+      bottom: 110px;
+      &__image {
+        // width: 100%;
+        height: auto;
+        margin: 0 5px;
+      }
+    }
+  }
+}

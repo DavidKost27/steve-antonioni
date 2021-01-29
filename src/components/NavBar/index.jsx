@@ -14,8 +14,9 @@ export default function NavBar() {
       </Link>
       <Link
         to="/portfolio/"
-        className="nav-bar__path"
+        className="nav-bar__path portfolio-path"
         activeStyle={{ backgroundColor: "black", color: "white" }}
+        partiallyActive={true}
       >
         Portfolio
       </Link>

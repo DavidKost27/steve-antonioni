@@ -7,7 +7,15 @@ export default function YoutubeCard(props) {
   const videosNumber = parseInt(props.stats.videos).toLocaleString();
 
   return (
-    <div className="youtubeCard">
+    <div
+      className="youtubeCard"
+      onClick={() =>
+        window.open(
+          "https://www.youtube.com/channel/UCS4ITAOQlFP9_ny2Zl5b0ig",
+          "mywindow"
+        )
+      }
+    >
       <img
         className="youtubeCard__avatar"
         src={`${props.channelAvatar}`}

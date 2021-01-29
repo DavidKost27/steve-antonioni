@@ -4,7 +4,12 @@ import InstagramIcon from "../../assets/icons/instagram-icon.svg";
 
 export default function InstagramCard(props) {
   return (
-    <div className="instagramCard">
+    <div
+      className="instagramCard"
+      onClick={() =>
+        window.open("https://www.instagram.com/steveantonioni/", "mywindow")
+      }
+    >
       <img
         className="instagramCard__avatar"
         src={props.profilePic}
