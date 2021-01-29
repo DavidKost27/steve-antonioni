@@ -11,21 +11,23 @@ const IndexPage = () => {
       <title>Steve Antonioni - Contact</title>
       <TopBar />
       <div>
-        <div>Get in Touch</div>
+        <div className="contact__header">Get in Touch</div>
 
-        <div>
-          Interested in working together or have a question? Feel free to drop
-          me a line and I will get back shortly.
+        <div className="contact__parah">
+          Interested in working together or have a question ? <br />
+          Feel free to drop me a line and I will get back shortly.
         </div>
 
-        <div>
-          Shoot me an email or send me a direction message through the field
-          below.{" "}
+        <div className="contact__call-to-action">
+          Shoot me an email by pressing the contact button below.
         </div>
       </div>
 
-      <div>Email: steveantonioni@gmail.com</div>
+      <div className="contact__email">steveantonioni@gmail.com</div>
 
+      <a className="contact__btn" href="mailto:davidkost1999@gmail.com">
+        Contact Me
+      </a>
       {/* This Is How You Link */}
       {/* <Link to="/">Home</Link>
       <Link to="/portfolio/">Portfolio</Link>
