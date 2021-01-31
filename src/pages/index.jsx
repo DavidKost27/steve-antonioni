@@ -85,12 +85,6 @@ const IndexPage = () => {
 
       <UdemyCard />
 
-      {/* This Is How You Link */}
-      {/* <Link to="/portfolio/">Portfolio</Link>
-      <Link to="/about/">About</Link>
-      <Link to="/contact/">Contact</Link> */}
-      {/*  */}
-
       <NavBar />
     </main>
   );
