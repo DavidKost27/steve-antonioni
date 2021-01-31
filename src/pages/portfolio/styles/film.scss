@@ -41,3 +41,34 @@
     }
   }
 }
+
+// Desktop 1280 px
+@media only screen and (min-width: 1280px) {
+  .portfolio {
+    .img-container-parent {
+      margin: 0;
+      padding: 0;
+      .img-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        overflow-y: scroll;
+
+        transform: rotate(-90deg);
+        margin-bottom: 150px;
+        width: 400px;
+        height: 300px;
+        &__image {
+          transform: rotate(90deg);
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    .portfolio-nav {
+    }
+  }
+}

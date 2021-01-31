@@ -53,3 +53,28 @@
     }
   }
 }
+
+// Desktop 1280 px
+@media only screen and (min-width: 1280px) {
+  .udemyCard {
+    width: 280px;
+    height: 380px;
+
+    &__avatar {
+      width: 170px;
+      height: 110px;
+      border-radius: 20px;
+      margin: 20px 0 10px 0;
+    }
+    &__icon {
+      width: 43px;
+      height: 42px;
+      top: 105px;
+    }
+
+    &__header {
+      font-size: 40px;
+      padding-top: 15px;
+    }
+  }
+}

@@ -28,3 +28,31 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .about {
+    .about-paragraph {
+      width: 600px;
+      text-align: left;
+      text-align: center;
+      line-height: 44px;
+      &__header {
+        font-size: 60px;
+        padding-bottom: 15px;
+        text-align: center;
+      }
+      &__location {
+        font-size: 35px;
+        padding-bottom: 5px;
+      }
+      &__info {
+        font-size: 35px;
+        padding-bottom: 5px;
+      }
+      &__img-about {
+        width: 220px;
+        height: 280px;
+      }
+    }
+  }
+}

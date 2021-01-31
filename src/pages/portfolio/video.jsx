@@ -11,36 +11,42 @@ export default function Video() {
       <title>Steve Antonioni - Portfolio</title>
       <TopBar />
       <div className="videos-container">
-        <iframe
-          src="https://player.vimeo.com/video/320336628?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
-          frameborder="0"
-          allowfullscreen=""
-          scrolling="no"
-          // style={{
-          //   width: "100%",
-          //   height: "100%",
-          // }}
-        ></iframe>
-        <iframe
-          src="https://player.vimeo.com/video/320354796?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
-          frameborder="0"
-          allowfullscreen=""
-          scrolling="no"
-          // style={{
-          //   width: "100%",
-          //   height: "100%",
-          // }}
-        ></iframe>
-        <iframe
-          src="https://player.vimeo.com/video/320950267?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
-          frameborder="0"
-          allowfullscreen=""
-          // scrolling="no"
-          // style={{
-          //   width: "100%",
-          //   height: "100%",
-          // }}
-        ></iframe>
+        <div className="iframe-container">
+          <iframe
+            src="https://player.vimeo.com/video/320336628?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
+            frameborder="0"
+            allowfullscreen=""
+            scrolling="no"
+            // style={{
+            //   width: "100%",
+            //   height: "100%",
+            // }}
+          ></iframe>
+        </div>
+        <div className="iframe-container">
+          <iframe
+            src="https://player.vimeo.com/video/320354796?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
+            frameborder="0"
+            allowfullscreen=""
+            scrolling="no"
+            // style={{
+            //   width: "100%",
+            //   height: "100%",
+            // }}
+          ></iframe>
+        </div>
+        <div className="iframe-container">
+          <iframe
+            src="https://player.vimeo.com/video/320950267?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
+            frameborder="0"
+            allowfullscreen=""
+            // scrolling="no"
+            // style={{
+            //   width: "100%",
+            //   height: "100%",
+            // }}
+          ></iframe>
+        </div>
       </div>
       <PortfolioNav />
       <NavBar />
