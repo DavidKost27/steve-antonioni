@@ -14,7 +14,7 @@ const Portfolio = () => {
       <div className="img-container-parent">
         <div className="img-container">
           <img
-            className="img-container__image"
+            className="img-container__image "
             src="https://format-com-cld-res.cloudinary.com/image/private/s--Czd4ubou--/c_limit,g_center,h_550,w_65535/fl_keep_iptc.progressive,q_95/v1/819662ccdb13583d3ce2bc7e5a969580/000063510036.jpg"
             alt=""
           />

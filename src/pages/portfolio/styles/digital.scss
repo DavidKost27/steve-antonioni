@@ -24,3 +24,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .portfolio-digital {
+    .img-container-parent {
+      .img-container {
+        width: 700px;
+        margin-bottom: 150px;
+        bottom: 110px;
+        &__image {
+        }
+      }
+    }
+  }
+}
