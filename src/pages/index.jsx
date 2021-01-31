@@ -79,11 +79,13 @@ const IndexPage = () => {
       <TopBar />
       <header>Creator & Educator</header>
 
-      <YoutubeCard stats={stats} channelAvatar={channelAvatar} />
+      <div className="home__cards-container">
+        <YoutubeCard stats={stats} channelAvatar={channelAvatar} />
 
-      <InstagramCard profilePic={profilePic} instaStats={instaStats} />
+        <InstagramCard profilePic={profilePic} instaStats={instaStats} />
 
-      <UdemyCard />
+        <UdemyCard />
+      </div>
 
       <NavBar />
     </main>

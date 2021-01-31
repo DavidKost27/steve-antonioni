@@ -46,3 +46,44 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .instagramCard {
+    width: 240px;
+    height: 340px;
+
+    &__avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 60px;
+      margin: 10px 0;
+    }
+    &__icon {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      top: 95px;
+    }
+    &__header {
+      font-size: 45px;
+    }
+
+    // Stats
+    .stats-container {
+      text-align: center;
+      font-size: 33px;
+      &__followers {
+        &__title {
+        }
+        &__number {
+        }
+      }
+      &__posts {
+        &__title {
+        }
+        &__number {
+        }
+      }
+    }
+  }
+}

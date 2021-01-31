@@ -28,7 +28,18 @@
     align-items: center;
     text-decoration: none;
   }
-  .active {
-    background-color: red !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-bar {
+    height: 120px;
+    &__path {
+      margin: 0 10px;
+      border: none;
+      border-radius: 100px;
+      width: 95px;
+      height: 95px;
+      font-size: 32px;
+    }
   }
 }

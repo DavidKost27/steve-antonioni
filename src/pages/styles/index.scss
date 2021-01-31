@@ -11,6 +11,8 @@
     font-family: "Rancho", cursive;
   }
 
+  &__cards-container {
+  }
   .youtubeCard {
   }
 
@@ -21,5 +23,44 @@
   .udemyCard {
     margin-top: 40px;
     margin-bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+      padding-bottom: 20px;
+      text-align: center;
+      font-size: 55px;
+    }
+
+    &__cards-container {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(5, 1 fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas:
+        "1 youtube 3 instagram 5"
+        "6 7 udemy 9 10";
+      justify-content: center;
+    }
+
+    .youtubeCard {
+      grid-area: youtube;
+    }
+
+    .instagramCard {
+      grid-area: instagram;
+      margin: 0;
+    }
+
+    .udemyCard {
+      grid-area: udemy;
+      margin: 0;
+    }
   }
 }

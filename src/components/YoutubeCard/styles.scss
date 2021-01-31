@@ -45,3 +45,44 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .youtubeCard {
+    width: 240px;
+    height: 340px;
+
+    &__avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 60px;
+      margin: 10px 0;
+    }
+    &__icon {
+      width: 30px;
+      height: 29px;
+      top: 95px;
+    }
+
+    &__header {
+      font-size: 45px;
+    }
+
+    // Stats
+    .stats-container {
+      text-align: center;
+      font-size: 33px;
+      &__subscribers {
+        &__title {
+        }
+        &__number {
+        }
+      }
+      &__videos {
+        &__title {
+        }
+        &__number {
+        }
+      }
+    }
+  }
+}

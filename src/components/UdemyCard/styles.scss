@@ -28,22 +28,28 @@
     text-align: center;
     padding-top: 10px;
   }
+}
 
-  // Stats
-  .stats-container {
-    text-align: center;
-    font-size: 22px;
-    &__subscribers {
-      &__title {
-      }
-      &__number {
-      }
+@media only screen and (min-width: 768px) {
+  .udemyCard {
+    width: 240px;
+    height: 270px;
+
+    &__avatar {
+      width: 170px;
+      height: 110px;
+      border-radius: 20px;
+      margin: 10px 0;
     }
-    &__videos {
-      &__title {
-      }
-      &__number {
-      }
+    &__icon {
+      width: 43px;
+      height: 42px;
+      top: 95px;
+    }
+
+    &__header {
+      font-size: 35px;
+      padding-top: 5px;
     }
   }
 }
