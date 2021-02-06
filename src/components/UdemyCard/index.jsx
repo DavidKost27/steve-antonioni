@@ -16,7 +16,7 @@ export default function UdemyCard() {
       <img
         className="udemyCard__avatar"
         src="https://img-a.udemycdn.com/course/240x135/3540206_00ec.jpg?oEw4iDuHznKDY3RpW-LJvRd2GlMojTRAYFRSgzh3xkTQRLaFDj-dtUBYUaZSfC8AxwVgWvhmXRm1h37oGFIqa03UxDkVJta2iV5FF-1HZUTK4kl_JP5voweVT74odg"
-        alt="YouTube Profile Picture"
+        alt="Udemy Course Preview"
       />
       <img className="udemyCard__icon" src={Udemy} alt="udemy logo" />
       <div className="udemyCard__header">

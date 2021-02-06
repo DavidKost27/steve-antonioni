@@ -19,7 +19,7 @@ export default function YoutubeCard(props) {
       <img
         className="youtubeCard__avatar"
         src={`${props.channelAvatar}`}
-        alt="YouTube Profile Picture"
+        alt="YouTube Profile"
       />
       <img
         className="youtubeCard__icon"
