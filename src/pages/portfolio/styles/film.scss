@@ -4,19 +4,25 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    .img-container {
-      margin: 50px 0;
-      margin-right: 10px;
-      width: 300px;
-      overflow-x: scroll;
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      box-sizing: border-box;
-      bottom: 110px;
-      &__image {
-        height: auto;
-        margin: 0 5px;
+    .img-container-outerWrapper {
+      .img-container {
+        margin: 50px 0;
+        margin-right: 10px;
+        width: 300px;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        margin-left: 37px;
+        margin-top: 100px;
+        // bottom: 110px;
+        &__image {
+          height: auto;
+          margin: 0 5px;
+        }
       }
     }
   }
@@ -27,10 +33,12 @@
 @media only screen and (min-width: 768px) {
   .portfolio {
     .img-container-parent {
-      .img-container {
-        margin-bottom: 150px;
-        width: 700px;
-        &__image {
+      .img-container-outerWrapper {
+        .img-container {
+          margin-bottom: 150px;
+          width: 700px;
+          &__image {
+          }
         }
       }
     }
@@ -43,9 +51,33 @@
 @media only screen and (min-width: 1280px) {
   .portfolio {
     .img-container-parent {
-      .img-container {
-        flex-direction: column;
-        &__image {
+      position: relative;
+
+      .img-container-outerWrapper {
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        top: -250px;
+        margin-left: -500px;
+        overflow-x: hidden;
+        position: absolute;
+        width: 49vh;
+        height: 69.7vw;
+        // overflow-x: hidden;
+        .img-container {
+          margin: 0;
+          left: -420px;
+          top: 0;
+          position: absolute;
+          overflow-x: hidden;
+          flex-direction: row;
+          width: 722vh;
+          height: 50vh;
+          overflow-x: hidden;
+          transform: rotate(90deg) translateY(-100vh);
+          transform-origin: top left;
+          &__image {
+          }
         }
       }
     }
