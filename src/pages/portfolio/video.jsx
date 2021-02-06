@@ -13,6 +13,7 @@ export default function Video() {
       <div className="videos-container">
         <div className="iframe-container">
           <iframe
+            title="first"
             src="https://player.vimeo.com/video/320336628?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
             frameborder="0"
             allowfullscreen=""
@@ -25,6 +26,7 @@ export default function Video() {
         </div>
         <div className="iframe-container">
           <iframe
+            title="second"
             src="https://player.vimeo.com/video/320354796?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
             frameborder="0"
             allowfullscreen=""
@@ -37,6 +39,7 @@ export default function Video() {
         </div>
         <div className="iframe-container">
           <iframe
+            title="therd"
             src="https://player.vimeo.com/video/320950267?title=0&byline=0&portrait=0&color=ffffff&api=1&autoplay=0"
             frameborder="0"
             allowfullscreen=""
