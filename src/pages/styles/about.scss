@@ -6,7 +6,7 @@
   align-items: center;
   .about-paragraph {
     width: 300px;
-    text-align: left;
+
     text-align: center;
     line-height: 30px;
     &__header {
@@ -14,17 +14,19 @@
       padding-bottom: 10px;
       text-align: center;
     }
-    &__location {
-      font-size: 28px;
-      padding-bottom: 5px;
-    }
-    &__info {
-      font-size: 20px;
-      padding-bottom: 10px;
-    }
-    &__img-about {
-      width: 200px;
-      height: 250px;
+    &__content-wrapper {
+      &__location {
+        font-size: 28px;
+        padding-bottom: 5px;
+      }
+      &__info {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      &__img-about {
+        width: 200px;
+        height: 250px;
+      }
     }
   }
 }
@@ -33,7 +35,7 @@
   .about {
     .about-paragraph {
       width: 600px;
-      text-align: left;
+
       text-align: center;
       line-height: 44px;
       &__header {
@@ -41,47 +43,51 @@
         padding-bottom: 15px;
         text-align: center;
       }
-      &__location {
-        font-size: 35px;
-        padding-bottom: 5px;
-      }
-      &__info {
-        font-size: 35px;
-        padding-bottom: 5px;
-      }
-      &__img-about {
-        width: 220px;
-        height: 280px;
+      &__content-wrapper {
+        &__location {
+          font-size: 35px;
+          padding-bottom: 5px;
+        }
+        &__info {
+          font-size: 35px;
+          padding-bottom: 5px;
+        }
+        &__img-about {
+          width: 220px;
+          height: 280px;
+        }
       }
     }
   }
 }
 
-// Desktop 1280 px
+// Laptop 1280 px
 @media only screen and (min-width: 1280px) {
   .about {
     margin-top: 162px;
     .about-paragraph {
-      width: 600px;
+      width: 1000px;
       text-align: left;
-      text-align: center;
       line-height: 44px;
       &__header {
-        font-size: 60px;
-        padding-bottom: 15px;
-        text-align: center;
+        margin-bottom: 20px;
       }
-      &__location {
-        font-size: 35px;
-        padding-bottom: 5px;
-      }
-      &__info {
-        font-size: 35px;
-        padding-bottom: 5px;
-      }
-      &__img-about {
-        width: 220px;
-        height: 280px;
+      &__content-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        &__location {
+        }
+        &__info {
+          width: 600px;
+        }
+        &__img-about {
+          width: 340px;
+          height: 400px;
+          margin-left: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
       }
     }
   }
