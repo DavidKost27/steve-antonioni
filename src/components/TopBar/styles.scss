@@ -19,3 +19,10 @@
     left: 0;
   }
 }
+
+// Desktop 1920 px
+@media only screen and (min-width: 1920px) {
+  .topbar {
+    font-size: 120px;
+  }
+}

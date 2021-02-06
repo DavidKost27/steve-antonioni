@@ -43,3 +43,18 @@
     }
   }
 }
+
+// Desktop 1920 px
+@media only screen and (min-width: 1920px) {
+  .nav-bar {
+    height: 160px;
+    &__path {
+      margin: 0 10px;
+      border: none;
+      border-radius: 100px;
+      width: 125px;
+      height: 125px;
+      font-size: 42px;
+    }
+  }
+}

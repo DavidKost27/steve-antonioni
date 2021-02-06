@@ -105,3 +105,32 @@
     }
   }
 }
+
+// Desktop 1920 px
+@media only screen and (min-width: 1920px) {
+  .instagramCard {
+    width: 380px;
+    height: 560px;
+
+    &__avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 120px;
+    }
+    &__icon {
+      width: 54px;
+      height: 54px;
+      position: absolute;
+      top: 172px;
+    }
+    &__header {
+      margin-top: 6px;
+      font-size: 70px;
+    }
+
+    // Stats
+    .stats-container {
+      font-size: 50px;
+    }
+  }
+}
