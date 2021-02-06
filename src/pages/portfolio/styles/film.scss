@@ -35,7 +35,10 @@
     .img-container-parent {
       .img-container-outerWrapper {
         .img-container {
-          margin-bottom: 150px;
+          margin: 0;
+          margin-top: 190px;
+          margin-left: 30px;
+
           width: 700px;
           &__image {
           }
@@ -57,7 +60,7 @@
         transform: rotate(-90deg) translateX(-100vh);
         transform-origin: top left;
         overflow-y: scroll;
-        top: -250px;
+        top: -260px;
         margin-left: -500px;
         overflow-x: hidden;
         position: absolute;

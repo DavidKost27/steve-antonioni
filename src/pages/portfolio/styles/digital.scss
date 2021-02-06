@@ -5,21 +5,26 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    .img-container {
-      margin: 50px 0;
-      margin-right: 10px;
-      width: 300px;
-      overflow-x: scroll;
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      box-sizing: border-box;
+    .img-container-outerWrapper {
+      .img-container {
+        margin: 50px 0;
+        margin-right: 10px;
+        width: 300px;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        margin-left: 37px;
+        margin-top: 100px;
 
-      bottom: 110px;
-      &__image {
-        // width: 100%;
-        height: auto;
-        margin: 0 5px;
+        &__image {
+          // width: 100%;
+          height: auto;
+          margin: 0 5px;
+        }
       }
     }
   }
@@ -28,12 +33,15 @@
 @media only screen and (min-width: 768px) {
   .portfolio-digital {
     .img-container-parent {
-      .img-container {
-        width: 700px;
-        margin-bottom: 150px;
-        bottom: 110px;
+      .img-container-outerWrapper {
+        .img-container {
+          width: 700px;
+          margin: 0;
+          margin-top: 190px;
+          margin-left: 30px;
 
-        &__image {
+          &__image {
+          }
         }
       }
     }
@@ -44,20 +52,30 @@
 @media only screen and (min-width: 1280px) {
   .portfolio-digital {
     .img-container-parent {
-      width: calc(100vh - 162px);
-      height: 100vw;
-      transform: rotate(-90deg) translateX(-100vh);
-      transform-origin: top left;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      position: absolute;
-      .img-container {
-        position: static;
-        transform: rotate(90deg) translateY(-100vh);
+      .img-container-outerWrapper {
+        transform: rotate(-90deg) translateX(-100vh);
         transform-origin: top left;
-        flex-direction: row;
-        width: 400vw;
-        &__image {
+        overflow-y: scroll;
+        top: -260px;
+        margin-left: -450px;
+        overflow-x: hidden;
+        position: absolute;
+        width: 49vh;
+        height: 65.2vw;
+        .img-container {
+          margin: 0;
+          left: -420px;
+          top: 0;
+          position: absolute;
+          overflow-x: hidden;
+          flex-direction: row;
+          width: 2222vh;
+          height: 50vh;
+          overflow-x: hidden;
+          transform: rotate(90deg) translateY(-100vh);
+          transform-origin: top left;
+          &__image {
+          }
         }
       }
     }
