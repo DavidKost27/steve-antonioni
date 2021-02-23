@@ -92,3 +92,23 @@
     }
   }
 }
+
+// Laptop 1920 px
+@media only screen and (min-width: 1920px) {
+  .about {
+    margin-top: 220px;
+
+    .about-paragraph {
+      &__header {
+      }
+      &__content-wrapper {
+        &__location {
+        }
+        &__info {
+        }
+        &__img-about {
+        }
+      }
+    }
+  }
+}

@@ -69,7 +69,7 @@
 // Desktop 1280 px
 @media only screen and (min-width: 1280px) {
   .home {
-    margin-top: 162px;
+    margin-top: 202px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,45 +78,6 @@
       padding-bottom: 20px;
       text-align: center;
       font-size: 60px;
-    }
-
-    &__cards-container {
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-    }
-
-    .youtubeCard {
-      grid-area: youtube;
-      margin-right: 50px;
-    }
-
-    .instagramCard {
-      grid-area: instagram;
-      margin: 0;
-    }
-
-    .udemyCard {
-      grid-area: udemy;
-      margin: 0;
-      margin-left: 50px;
-    }
-  }
-}
-
-// Desktop 1920 px
-@media only screen and (min-width: 1920px) {
-  .home {
-    margin-top: 174px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    header {
-      padding-bottom: 20px;
-      text-align: center;
-      font-size: 80px;
-      margin-top: 40px;
     }
 
     &__cards-container {
