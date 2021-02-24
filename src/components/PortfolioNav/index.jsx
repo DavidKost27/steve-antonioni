@@ -5,7 +5,6 @@ import "./styles.scss";
 export default function PortfolioNav() {
   return (
     <div className="portfolio-nav">
-      {/* This Is How You Link */}
       <div className="container">
         <Link
           className="container__option"

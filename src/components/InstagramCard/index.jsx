@@ -2,10 +2,34 @@ import React from "react";
 import "./styles.scss";
 import InstagramIcon from "../../assets/icons/instagram-icon.svg";
 
+// Framer motion
+import { motion } from "framer-motion";
+
 export default function InstagramCard(props) {
+  const variants = {
+    phone_hidden: {
+      x: "-100vw",
+    },
+    phone_vissible: {
+      x: "0",
+    },
+    web_hidden: {
+      y: "100vh",
+    },
+    web_vissible: {
+      y: "0",
+    },
+  };
+
+  const screenWidth = window.screen.width;
+
   return (
-    <div
+    <motion.div
       className="instagramCard"
+      variants={variants}
+      initial={screenWidth <= 375 ? "phone_hidden" : "web_hidden"}
+      animate={screenWidth <= 375 ? "phone_vissible" : "web_vissible"}
+      transition={{ duration: 1.5 }}
       onClick={() =>
         window.open("https://www.instagram.com/steveantonioni/", "mywindow")
       }
@@ -45,6 +69,6 @@ export default function InstagramCard(props) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
