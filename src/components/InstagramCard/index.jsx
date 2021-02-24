@@ -29,7 +29,7 @@ export default function InstagramCard(props) {
       variants={variants}
       initial={screenWidth <= 375 ? "phone_hidden" : "web_hidden"}
       animate={screenWidth <= 375 ? "phone_vissible" : "web_vissible"}
-      transition={{ duration: 1.5 }}
+      transition={{ delay: 0.4, duration: 1.5 }}
       onClick={() =>
         window.open("https://www.instagram.com/steveantonioni/", "mywindow")
       }

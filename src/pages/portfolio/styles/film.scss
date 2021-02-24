@@ -50,7 +50,7 @@
   }
 }
 
-// Laptop
+// Laptop 1280
 @media only screen and (min-width: 1280px) {
   .portfolio {
     .img-container-parent {
@@ -60,13 +60,13 @@
         transform: rotate(-90deg) translateX(-100vh);
         transform-origin: top left;
         overflow-y: scroll;
-        top: -260px;
-        margin-left: -800px;
+        top: -270px;
+        margin-left: -750px;
         overflow-x: hidden;
         position: absolute;
         width: 49vh;
-        height: 69.7vw;
-        // overflow-x: hidden;
+        height: 91vw;
+
         .img-container {
           margin: 0;
           left: -420px;
@@ -79,6 +79,71 @@
           overflow-x: hidden;
           transform: rotate(90deg) translateY(-100vh);
           transform-origin: top left;
+          &__image {
+          }
+        }
+      }
+    }
+    .portfolio-nav {
+    }
+  }
+}
+
+// Laptop 1366
+@media only screen and (min-width: 1366px) {
+  .portfolio {
+    .img-container-parent {
+      position: relative;
+
+      .img-container-outerWrapper {
+        top: -270px;
+        margin-left: -750px;
+        width: 46vh;
+        height: 82vw;
+
+        .img-container {
+          &__image {
+          }
+        }
+      }
+    }
+    .portfolio-nav {
+    }
+  }
+}
+
+// Web 1440
+@media only screen and (min-width: 1440px) {
+  .portfolio {
+    .img-container-parent {
+      .img-container-outerWrapper {
+        top: -250px;
+        margin-left: -820px;
+
+        width: 55vh;
+        height: 90.5vw;
+
+        .img-container {
+          &__image {
+          }
+        }
+      }
+    }
+    .portfolio-nav {
+    }
+  }
+}
+
+// Web 1920
+@media only screen and (min-width: 1920px) {
+  .portfolio {
+    .img-container-parent {
+      .img-container-outerWrapper {
+        top: -180px;
+        margin-left: -900px;
+        width: 62vh;
+        height: 81vw;
+        .img-container {
           &__image {
           }
         }

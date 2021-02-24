@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles/digital.scss";
 
+// Framer motion
+import { motion } from "framer-motion";
+
 import TopBar from "../../components/TopBar";
 import PortfolioNav from "../../components/PortfolioNav";
 import NavBar from "../../components/NavBar";
@@ -11,7 +14,12 @@ export default function Digital() {
       <title>Steve Antonioni - Portfolio</title>
       <TopBar />
 
-      <div className="img-container-parent">
+      <motion.div
+        className="img-container-parent"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="img-container-outerWrapper">
           <div className="img-container">
             <img
@@ -211,7 +219,7 @@ export default function Digital() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <PortfolioNav />
       <NavBar />

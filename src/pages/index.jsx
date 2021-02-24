@@ -4,6 +4,9 @@ import "./styles/index.scss";
 // import { Link } from "gatsby";
 import axios from "axios";
 
+// Framer motion
+import { motion } from "framer-motion";
+
 import TopBar from "../components/TopBar";
 import YoutubeCard from "../components/YoutubeCard";
 import InstagramCard from "../components/InstagramCard";
@@ -77,7 +80,13 @@ const IndexPage = () => {
     <main className="home">
       <title>Steve Antonioni - Home</title>
       <TopBar />
-      <header>Creator & Educator</header>
+      <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        Creator & Educator
+      </motion.header>
 
       <div className="home__cards-container">
         <YoutubeCard stats={stats} channelAvatar={channelAvatar} />

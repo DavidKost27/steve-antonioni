@@ -1,6 +1,8 @@
 import * as React from "react";
 import "./styles/about.scss";
-// import { Link } from "gatsby";
+
+// Framer motion
+import { motion } from "framer-motion";
 
 import TopBar from "../components/TopBar";
 import NavBar from "../components/NavBar";
@@ -10,7 +12,12 @@ const IndexPage = () => {
     <main className="about">
       <title>Steve Antonioni - About</title>
       <TopBar />
-      <div className="about-paragraph">
+      <motion.div
+        className="about-paragraph"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <header className="about-paragraph__header">About - Steve</header>
 
         <div className="about-paragraph__content-wrapper">
@@ -36,13 +43,7 @@ const IndexPage = () => {
             alt="Steve standing in the forest with a camera hanging on his nech from a camera strap."
           />
         </div>
-      </div>
-
-      {/* This Is How You Link */}
-      {/* <Link to="/">Home</Link>
-      <Link to="/portfolio/">Portfolio</Link>
-      <Link to="/about/">About</Link> */}
-      {/*  */}
+      </motion.div>
 
       <NavBar />
     </main>

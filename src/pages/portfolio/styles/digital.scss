@@ -48,7 +48,7 @@
   }
 }
 
-// Laptop
+// Laptop 1280
 @media only screen and (min-width: 1280px) {
   .portfolio-digital {
     .img-container-parent {
@@ -56,12 +56,12 @@
         transform: rotate(-90deg) translateX(-100vh);
         transform-origin: top left;
         overflow-y: scroll;
-        top: -250px;
-        margin-left: -760px;
+        top: -260px;
+        margin-left: -730px;
         overflow-x: hidden;
         position: absolute;
         width: 49vh;
-        height: 65.2vw;
+        height: 86vw;
         .img-container {
           margin: 0;
           left: -420px;
@@ -74,6 +74,61 @@
           overflow-x: hidden;
           transform: rotate(90deg) translateY(-100vh);
           transform-origin: top left;
+          &__image {
+          }
+        }
+      }
+    }
+  }
+}
+
+// Web 1366
+@media only screen and (min-width: 1366px) {
+  .portfolio-digital {
+    .img-container-parent {
+      .img-container-outerWrapper {
+        top: -260px;
+        margin-left: -660px;
+        width: 46vh;
+        height: 78vw;
+        .img-container {
+          &__image {
+          }
+        }
+      }
+    }
+  }
+}
+
+// Web 1440
+@media only screen and (min-width: 1440px) {
+  .portfolio-digital {
+    .img-container-parent {
+      .img-container-outerWrapper {
+        top: -240px;
+        margin-left: -770px;
+        width: 55vh;
+        height: 86vw;
+        .img-container {
+          &__image {
+          }
+        }
+      }
+    }
+  }
+}
+
+// Web 1920
+@media only screen and (min-width: 1920px) {
+  .portfolio-digital {
+    .img-container-parent {
+      .img-container-outerWrapper {
+        top: -180px;
+        margin-left: -830px;
+
+        width: 62vh;
+        height: 77vw;
+        .img-container {
           &__image {
           }
         }
