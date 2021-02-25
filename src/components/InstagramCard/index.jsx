@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles.scss";
 import InstagramIcon from "../../assets/icons/instagram-icon.svg";
 
@@ -21,7 +21,13 @@ export default function InstagramCard(props) {
     },
   };
 
-  const screenWidth = window.screen.width;
+  let screenWidth;
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      screenWidth = window.screen.width;
+    }
+  }, []);
 
   return (
     <motion.div

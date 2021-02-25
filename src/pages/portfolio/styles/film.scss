@@ -58,7 +58,7 @@
         transform-origin: top left;
         overflow-y: scroll;
         top: -270px;
-        margin-left: -750px;
+        margin-left: -760px;
         overflow-x: hidden;
         position: absolute;
         width: 49vh;
@@ -80,6 +80,9 @@
           direction: ltr;
           &__image:first-child {
             margin: 0 5px 0 0;
+          }
+          &__image:last-child {
+            margin: 0 0 0 5px;
           }
           &__image {
           }
@@ -118,12 +121,15 @@
   .portfolio {
     .img-container-parent {
       position: relative;
+
       .img-container-outerWrapper {
         top: -270px;
-        margin-left: -750px;
-        width: 46vh;
-        height: 82vw;
+        margin-left: -640px;
+        width: 47vh;
+        height: 73.6vw;
         .img-container {
+          width: 652.8vh;
+          height: 45.28vh;
           &__image {
           }
         }
@@ -139,11 +145,13 @@
   .portfolio {
     .img-container-parent {
       .img-container-outerWrapper {
-        top: -250px;
-        margin-left: -820px;
-        width: 55vh;
-        height: 90.5vw;
+        top: -270px;
+        margin-left: -925px;
+        width: 50vh;
+        height: 95.8vw;
         .img-container {
+          width: 761.8vh;
+          height: 53.28vh;
           &__image {
           }
         }
@@ -159,12 +167,13 @@
   .portfolio {
     .img-container-parent {
       .img-container-outerWrapper {
-        top: -215px;
-        margin-left: -830px;
-        width: 57vh;
-        height: 69.9vw;
+        top: -265px;
+        margin-left: -990px;
+        width: 55vh;
+        height: 83.7vw;
         .img-container {
-          width: 716.6vh;
+          width: 820vh;
+          height: 61.22vh;
           &__image {
           }
         }

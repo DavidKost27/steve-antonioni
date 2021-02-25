@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles.scss";
 import YouTubeLogo from "../../assets/icons/youtube-icon.svg";
 
@@ -24,7 +24,13 @@ export default function YoutubeCard(props) {
     },
   };
 
-  const screenWidth = window.screen.width;
+  let screenWidth;
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      screenWidth = window.screen.width;
+    }
+  }, []);
 
   return (
     <motion.div

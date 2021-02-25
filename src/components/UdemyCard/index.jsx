@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles.scss";
 import Udemy from "../../assets/icons/udemy.svg";
 
@@ -21,7 +21,13 @@ export default function UdemyCard() {
     },
   };
 
-  const screenWidth = window.screen.width;
+  let screenWidth;
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      screenWidth = window.screen.width;
+    }
+  }, []);
 
   return (
     <motion.div
