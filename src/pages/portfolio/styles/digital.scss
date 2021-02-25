@@ -62,6 +62,7 @@
         position: absolute;
         width: 49vh;
         height: 86vw;
+        direction: rtl;
         .img-container {
           margin: 0;
           left: -420px;
@@ -74,6 +75,7 @@
           overflow-x: hidden;
           transform: rotate(90deg) translateY(-100vh);
           transform-origin: top left;
+          direction: ltr;
           &__image {
           }
         }
@@ -123,12 +125,12 @@
   .portfolio-digital {
     .img-container-parent {
       .img-container-outerWrapper {
-        top: -180px;
+        top: -205px;
         margin-left: -830px;
-
-        width: 62vh;
-        height: 77vw;
+        width: 57vh;
+        height: 67vw;
         .img-container {
+          width: 2216.6vh;
           &__image {
           }
         }

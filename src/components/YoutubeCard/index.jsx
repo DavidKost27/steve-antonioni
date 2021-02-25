@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.scss";
 import YouTubeLogo from "../../assets/icons/youtube-icon.svg";
 

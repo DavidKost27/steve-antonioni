@@ -18,7 +18,6 @@
         top: 0;
         margin-left: 37px;
         margin-top: 100px;
-        // bottom: 110px;
         &__image {
           height: auto;
           margin: 0 5px;
@@ -38,7 +37,6 @@
           margin: 0;
           margin-top: 190px;
           margin-left: 30px;
-
           width: 700px;
           &__image {
           }
@@ -55,7 +53,6 @@
   .portfolio {
     .img-container-parent {
       position: relative;
-
       .img-container-outerWrapper {
         transform: rotate(-90deg) translateX(-100vh);
         transform-origin: top left;
@@ -65,8 +62,9 @@
         overflow-x: hidden;
         position: absolute;
         width: 49vh;
-        height: 91vw;
-
+        height: 90.2vw;
+        direction: rtl;
+        border-radius: 10px;
         .img-container {
           margin: 0;
           left: -420px;
@@ -74,11 +72,15 @@
           position: absolute;
           overflow-x: hidden;
           flex-direction: row;
-          width: 722vh;
+          width: 718.8vh;
           height: 50vh;
           overflow-x: hidden;
           transform: rotate(90deg) translateY(-100vh);
           transform-origin: top left;
+          direction: ltr;
+          &__image:first-child {
+            margin: 0 5px 0 0;
+          }
           &__image {
           }
         }
@@ -87,6 +89,28 @@
     .portfolio-nav {
     }
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px 0 0 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(54, 54, 54);
+    border-radius: 10px 0 0 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #646464;
+  }
 }
 
 // Laptop 1366
@@ -94,13 +118,11 @@
   .portfolio {
     .img-container-parent {
       position: relative;
-
       .img-container-outerWrapper {
         top: -270px;
         margin-left: -750px;
         width: 46vh;
         height: 82vw;
-
         .img-container {
           &__image {
           }
@@ -119,10 +141,8 @@
       .img-container-outerWrapper {
         top: -250px;
         margin-left: -820px;
-
         width: 55vh;
         height: 90.5vw;
-
         .img-container {
           &__image {
           }
@@ -139,11 +159,12 @@
   .portfolio {
     .img-container-parent {
       .img-container-outerWrapper {
-        top: -180px;
-        margin-left: -900px;
-        width: 62vh;
-        height: 81vw;
+        top: -215px;
+        margin-left: -830px;
+        width: 57vh;
+        height: 69.9vw;
         .img-container {
+          width: 716.6vh;
           &__image {
           }
         }

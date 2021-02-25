@@ -58,7 +58,7 @@
         position: absolute;
         width: 48vh;
         height: 51.5vw;
-
+        direction: rtl;
         .videos-container {
           margin: 0;
           left: -420px;
@@ -71,7 +71,7 @@
           transform: rotate(90deg) translateY(-100vh);
           transform-origin: top left;
           overflow-x: hidden;
-
+          direction: ltr;
           .iframe-container {
           }
 
@@ -133,11 +133,12 @@
     .videos-container-parent {
       .videos-container-outerWrapper {
         top: -200px;
-        margin-left: -650px;
-        width: 54vh;
+        margin-left: -670px;
+        width: 52vh;
         height: 69.5vw;
 
         .videos-container {
+          width: 215.8vh;
           .iframe-container {
           }
           iframe {
