@@ -4,3 +4,4 @@ public
 
 # API Key
 .env.development
+.env.production
