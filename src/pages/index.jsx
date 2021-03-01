@@ -51,23 +51,29 @@ const IndexPage = () => {
     posts: 0,
   });
 
-  const instagramApiRequest = () => {
-    axios
-      .get(`https://www.instagram.com/steveantonioni/channel/?__a=1`)
-      .then((response) => {
-        const followers = response.data.graphql.user.edge_followed_by.count;
-        const posts =
-          response.data.graphql.user.edge_owner_to_timeline_media.count;
+  let instagramRetryCall = 15;
 
-        setProfilePic(response.data.graphql.user.profile_pic_url);
-        setInstaStats({
-          followers: followers,
-          posts: posts,
+  const instagramApiRequest = () => {
+    if (instagramRetryCall > 0) {
+      axios
+        .get(`https://www.instagram.com/steveantonioni/channel/?__a=1`)
+        .then((response) => {
+          instagramRetryCall = 0;
+          const followers = response.data.graphql.user.edge_followed_by.count;
+          const posts =
+            response.data.graphql.user.edge_owner_to_timeline_media.count;
+
+          setProfilePic(response.data.graphql.user.profile_pic_url);
+          setInstaStats({
+            followers: followers,
+            posts: posts,
+          });
+        })
+        .catch((error) => {
+          console.log("API-request: Something Went Wrong");
+          instagramApiRequest();
         });
-      })
-      .catch((error) => {
-        console.log("API-request: Something Went Wrong");
-      });
+    }
   };
 
   // Call API on page load
