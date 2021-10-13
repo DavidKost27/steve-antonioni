@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./styles/about.scss";
+import { StaticImage } from "gatsby-plugin-image";
 
 // Framer motion
 import { motion } from "framer-motion";
@@ -36,11 +37,10 @@ const IndexPage = () => {
               throughout.
             </div>
           </div>
-
-          <img
-            className="about-paragraph__content-wrapper__img-about"
-            src="https://instagram.fhfa2-2.fna.fbcdn.net/v/t51.2885-15/e35/120825948_343562370053555_1728797159540256019_n.jpg?_nc_ht=instagram.fhfa2-2.fna.fbcdn.net&_nc_cat=111&_nc_ohc=jqZrjkBM3qgAX-bEQcP&tp=1&oh=8ee178017ef791f7434196ee64c73f1a&oe=60391EAF"
-            alt="Steve standing in the forest with a camera hanging on his nech from a camera strap."
+          <StaticImage
+            // className="about-paragraph__content-wrapper__img-about"
+            src="../../assets/images/instagram_profile.jpg"
+            alt="Steve standing."
           />
         </div>
       </motion.div>

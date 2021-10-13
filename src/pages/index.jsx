@@ -45,41 +45,43 @@ const IndexPage = () => {
   //
 
   // Instagram API call
-  const [profilePic, setProfilePic] = useState("null");
-  const [instaStats, setInstaStats] = useState({
-    followers: 0,
-    posts: 0,
-  });
+  // const [profilePic, setProfilePic] = useState("null");
+  // const [instaStats, setInstaStats] = useState({
+  //   followers: 0,
+  //   posts: 0,
+  // });
 
-  let instagramRetryCall = 15;
+  // let instagramRetryCall = 15;
 
-  const instagramApiRequest = () => {
-    if (instagramRetryCall > 0) {
-      axios
-        .get(`https://www.instagram.com/steveantonioni/channel/?__a=1`)
-        .then((response) => {
-          instagramRetryCall = 0;
-          const followers = response.data.graphql.user.edge_followed_by.count;
-          const posts =
-            response.data.graphql.user.edge_owner_to_timeline_media.count;
+  // const instagramApiRequest = () => {
+  //   if (instagramRetryCall > 0) {
+  //     axios
+  //       .get(
+  //         `https://instagram.ftlv6-1.fna.fbcdn.net/v/t51.2885-19/s150x150/245513770_403947274561801_2564348838204630652_n.jpg?_nc_ht=instagram.ftlv6-1.fna.fbcdn.net&_nc_ohc=vUR_StfoUdgAX9W346O&edm=ABfd0MgBAAAA&ccb=7-4&oh=3fdf8e698de80adf89d1a3a100e3e015&oe=616C9E9E&_nc_sid=7bff83`
+  //       )
+  //       .then((response) => {
+  //         instagramRetryCall = 0;
+  //         const followers = response.data.graphql.user.edge_followed_by.count;
+  //         const posts =
+  //           response.data.graphql.user.edge_owner_to_timeline_media.count;
 
-          setProfilePic(response.data.graphql.user.profile_pic_url);
-          setInstaStats({
-            followers: followers,
-            posts: posts,
-          });
-        })
-        .catch((error) => {
-          console.log("API-request: Something Went Wrong");
-          instagramApiRequest();
-        });
-    }
-  };
+  //         setProfilePic(response.data.graphql.user.profile_pic_url);
+  //         setInstaStats({
+  //           followers: followers,
+  //           posts: posts,
+  //         });
+  //       })
+  //       .catch((error) => {
+  //         console.log("API-request: Something Went Wrong");
+  //         instagramApiRequest();
+  //       });
+  //   }
+  // };
 
   // Call API on page load
   useEffect(() => {
     youtubeApiRequest();
-    instagramApiRequest();
+    // instagramApiRequest();
   }, []);
   //
   return (
@@ -97,7 +99,7 @@ const IndexPage = () => {
       <div className="home__cards-container">
         <YoutubeCard stats={stats} channelAvatar={channelAvatar} />
 
-        <InstagramCard profilePic={profilePic} instaStats={instaStats} />
+        <InstagramCard />
 
         <UdemyCard />
       </div>

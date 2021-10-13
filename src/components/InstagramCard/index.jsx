@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./styles.scss";
 import InstagramIcon from "../../assets/icons/instagram-icon.svg";
+import { StaticImage } from "gatsby-plugin-image";
 
 // Framer motion
 import { motion } from "framer-motion";
@@ -40,10 +41,10 @@ export default function InstagramCard(props) {
         window.open("https://www.instagram.com/steveantonioni/", "mywindow")
       }
     >
-      <img
+      <StaticImage
         className="instagramCard__avatar"
-        src={props.profilePic}
-        alt="Instagram Profile Avatar"
+        src="../../assets/images/instagram_profile.jpg"
+        alt="Steve Antonioni"
       />
 
       <img
@@ -62,17 +63,12 @@ export default function InstagramCard(props) {
       <div className="stats-container">
         <div className="stats-container__followers">
           <div className="stats-container__followers__title">Followers:</div>
-          <div className="stats-container__followers__number">
-            {props.instaStats.followers.toLocaleString()}
-          </div>
+          <div className="stats-container__followers__number">2,770</div>
         </div>
 
         <div className="stats-container__posts">
           <div className="stats-container__posts__title">Posts:</div>
-          <div className="stats-container__posts__number">
-            {" "}
-            {props.instaStats.posts.toLocaleString()}
-          </div>
+          <div className="stats-container__posts__number"> 380</div>
         </div>
       </div>
     </motion.div>
